@@ -1,7 +1,22 @@
+
+
 const chatForm = document.getElementById("chat-form");
 const chatMessages = document.querySelector(".chat-messages");
 const roomName = document.getElementById("room-name");
 const userList = document.getElementById("users");
+
+
+// const express = require("express");
+// const https = require("https");
+// const fs = require("fs");
+// const app = express();
+// const server = https.createServer({
+//     key: fs.readFileSync("path/to/private.key"),
+//     cert: fs.readFileSync("path/to/certificate.crt")
+//   }, app);
+  
+//   const io = require("socket.io")(server);
+
 
 const {username, room} = Qs.parse(location.search, {
     ignoreQueryPrefix: true
